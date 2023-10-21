@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDDDE6"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/id_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E3BC9A"
+        android:text="GO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="204dp"
+        android:fontFamily="sans-serif-black"
+        android:text="News in a Flash"
+        android:textColor="#61482F"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/id_go"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/id_instructions"
+        android:layout_width="198dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Enter a key word and we'll suggest you articles and their descriptions till you find the perfect one!"
+        android:textColor="#47290A"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_title" />
+
+    <EditText
+        android:id="@+id/id_keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter your keyword"
+        android:textColor="#815648"
+        app:layout_constraintBottom_toTopOf="@+id/id_go"
+        app:layout_constraintEnd_toEndOf="@+id/id_go"
+        app:layout_constraintStart_toStartOf="@+id/id_go"
+        app:layout_constraintTop_toBottomOf="@+id/id_instructions" />
+
+    <TextView
+        android:id="@+id/id_displaydesc"
+        android:layout_width="265dp"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:text="Description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_go"
+        app:layout_constraintVertical_bias="0.552" />
+
+    <TextView
+        android:id="@+id/id_displayTitle"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="Title"
+        app:layout_constraintBottom_toTopOf="@+id/id_displaydesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_go"
+        app:layout_constraintVertical_bias="0.514" />
+
+    <ImageView
+        android:id="@+id/id_star1"
+        android:layout_width="77dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/id_title"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/star_big_on" />
+
+    <ImageView
+        android:id="@+id/id_star2"
+        android:layout_width="77dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="308dp"
+        android:layout_marginLeft="308dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintStart_toStartOf="@+id/id_star1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/star_big_on" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
